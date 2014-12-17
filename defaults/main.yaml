@@ -1,0 +1,17 @@
+---
+
+# Default /etc/yum.conf configuration
+yumconf_conf:
+  # Name of the section
+  main:
+    # Parameters of the main section
+    cachedir: /var/cache/yum/$basearch/$releasever
+    debuglevel: 2
+    distroverpkg: "{{ ansible_distribution | lower }}-release"
+    exactarch: 1
+    gpgcheck: 1
+    installonly_limit: 5
+    keepcache: 0
+    logfile: /var/log/yum.log
+    obsoletes: 1
+    plugins: 1
