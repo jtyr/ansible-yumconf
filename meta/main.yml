@@ -4,11 +4,12 @@ galaxy_info:
   author: yumconf
   description: Role which helps to manage YUM configuration
   license: MIT
-  min_ansible_version: 2.0
+  min_ansible_version: 2.1
   platforms:
     - name: EL
       versions:
         - all
   categories:
     - system
-dependencies: []
+dependencies:
+  - config_encoder_filters

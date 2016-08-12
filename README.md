@@ -66,7 +66,7 @@ yumconf_config_main_obsoletes: 1
 yumconf_config_main_plugins: 1
 
 # Main section of the config
-yumconfig_config_main__default:
+yumconf_config_main__default:
   # Parameters of the main section
   cachedir: "{{ yumconf_config_main_cachedir }}"
   debuglevel: "{{ yumconf_config_main_debuglevel }}"
@@ -80,12 +80,12 @@ yumconfig_config_main__default:
   plugins: "{{ yumconf_config_main_plugins }}"
 
 # Custom options for the main section
-yumconfig_config_main__custom: {}
+yumconf_config_main__custom: {}
 
 # Default /etc/yum.conf configuration
 yumconf_config__default:
   # Name of the section
-  main: "{{ yumconfig_config_main__default }}{{  }}"
+  main: "{{ yumconf_config_main__default }}{{  }}"
 
 # Custom configuration
 yumconf_config__custom: {}
